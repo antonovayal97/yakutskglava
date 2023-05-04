@@ -145,7 +145,7 @@ let thisUrl = window.location.pathname
 headerLi.forEach((item, i) => {
   let a = item.querySelector('a')
   console.log(a.href, thisUrl)
-  if(a.href.includes(thisUrl) && thisUrl != '/')
+  if(a.href.includes(thisUrl) && thisUrl != '/yakutskglava/')
   {
     item.classList.add('header__menu-active')
   }
