@@ -2062,6 +2062,23 @@ header .header-wrap:last-child {
   }
 }
 
+.swiper-css-mode .strategy-list__swiper .swiper-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media (max-width: 1014px) {
+  .swiper-css-mode .strategy-list__swiper .swiper-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-css-mode .strategy-list__swiper .swiper-wrapper {
+    margin-left: 20px;
+  }
+}
+
 .strategy-list__swiper {
   position: relative;
   height: 100%;
