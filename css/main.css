@@ -1145,6 +1145,18 @@ header .header-wrap:last-child {
   z-index: 3;
 }
 
+.dd__arrow {
+  -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(50% 0%, 100% 100%, 0% 100%, 0% 100%);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 30px;
+  height: 10px;
+  background-color: #A43131;
+}
+
 .drop-down-menu__item {
   margin-bottom: 30px;
   font-family: "PT Sans";
@@ -1556,6 +1568,8 @@ header .header-wrap:last-child {
 
 .main-banner__swiper {
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
   margin-top: -152px;
 }
 @media (max-width: 1014px) {
@@ -1606,8 +1620,6 @@ header .header-wrap:last-child {
   width: 100%;
   height: 735px;
   position: relative;
-  border-radius: 5px;
-  overflow: hidden;
 }
 
 .banner__image {
@@ -1823,12 +1835,15 @@ header .header-wrap:last-child {
 }
 @media (max-width: 1014px) {
   .last-events__swiper .swiper-slide {
-    width: 330px;
+    width: 350px;
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: 0px;
+    padding-left: 20px;
   }
   .last-events__swiper .swiper-slide:first-child {
-    margin-left: 40px;
+    width: 370px;
+    margin-left: 0px;
+    padding-left: 40px;
   }
   .last-events__swiper .swiper-slide:last-child {
     margin-right: 40px;
@@ -1836,7 +1851,8 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .last-events__swiper .swiper-slide:first-child {
-    margin-left: 20px;
+    margin-left: 0px;
+    padding-left: 20px;
   }
   .last-events__swiper .swiper-slide:last-child {
     margin-right: 20px;
@@ -1844,6 +1860,7 @@ header .header-wrap:last-child {
 }
 
 .event-card {
+  display: block;
   position: relative;
   border-radius: 2px;
   overflow: hidden;
@@ -3452,15 +3469,20 @@ header .header-wrap:last-child {
 }
 
 .district__banner {
-  margin-top: -182px;
+  margin-top: -152px;
   margin-bottom: 100px;
   position: relative;
   width: 100%;
   height: 735px;
 }
+@media (max-width: 1200px) {
+  .district__banner {
+    margin-top: -141px;
+  }
+}
 @media (max-width: 1014px) {
   .district__banner {
-    margin-top: -172px;
+    margin-top: -141px;
     margin-bottom: 60px;
     margin-right: -20px;
     margin-left: -20px;
@@ -3875,6 +3897,10 @@ header .header-wrap:last-child {
   }
 }
 
+* {
+  transition-timing-function: linear;
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -3987,6 +4013,10 @@ body {
 }
 .page__content {
   grid-area: content;
+}
+
+.swiper-css-mode > .swiper-wrapper {
+  overflow-y: hidden;
 }
 
 .df-center {

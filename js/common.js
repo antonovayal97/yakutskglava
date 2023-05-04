@@ -3,7 +3,14 @@ document.addEventListener("DOMContentLoaded",(event) => {
   const mainBannerSwiper = new Swiper('.main-banner__swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
-    loop: true
+    loop: true,
+    cssMode: true,
+    breakpoints: {
+      744:
+      {
+        cssMode: false,
+      }
+    }
   })
   let header = document.querySelector('header')
   let headerInner = document.querySelector('.header')
@@ -16,6 +23,13 @@ if(topical != undefined)
 {
   let topicalSwiper = new Swiper('.topical-swiper', {
     slidesPerView: 'auto',
+    cssMode: true,
+    breakpoints: {
+      744:
+      {
+        cssMode: false,
+      }
+    }
   })
 }
 
@@ -28,12 +42,19 @@ newsDetailSwiper.forEach((item, i) => {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
+    cssMode: true,
     breakpoints: {
+      744:
+      {
+        cssMode: false,
+      }
   },
   pagination: {
     el: ".news-detail__swiper-pagination",
   },
   })
+
+
 
   let next = item.querySelector('.news-detail__swiper-buttons-next')
   let prev = item.querySelector('.news-detail__swiper-buttons-prev')
@@ -244,9 +265,14 @@ if(districtAchievements != undefined)
   const dA = new Swiper('.district__achievements-list', {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    cssMode: true,
     breakpoints: {
     1014: {
       spaceBetween: 40,
+    },
+    744:
+    {
+      cssMode: false,
     }
   }
   })
@@ -255,6 +281,13 @@ if(districtAchievements != undefined)
 
   const lastEventsSwiper = new Swiper('.last-events__swiper', {
     slidesPerView: 'auto',
+    cssMode: true,
+    breakpoints: {
+      744:
+      {
+        cssMode: false,
+      }
+  }
   })
 
 
@@ -267,6 +300,7 @@ if(districtAchievements != undefined)
       slidesPerView: 'auto',
       spaceBetween: 20,
       loop: true,
+      cssMode: true,
       breakpoints: {
       1014: {
         direction: "vertical",
@@ -274,7 +308,11 @@ if(districtAchievements != undefined)
         slidesPerView: 3,
         spaceBetween: 40,
         loop: true,
-      }
+      },
+        744:
+        {
+          cssMode: false,
+        }
     }
     })
     let next = sls.querySelector('.strategy-list__btn-next')
@@ -295,9 +333,16 @@ if(districtAchievements != undefined)
       slidesPerView: 'auto',
       spaceBetween: 20,
       loop: true,
+      cssMode: true,
       pagination: {
         el: ".blogSwiper-pagination",
       },
+      breakpoints: {
+        744:
+        {
+          cssMode: false,
+        }
+    }
     })
     let next = item.querySelector('.blogSwiper-buttons-next')
     let prev = item.querySelector('.blogSwiper-buttons-prev')
