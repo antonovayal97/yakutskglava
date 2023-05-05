@@ -1347,7 +1347,7 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .drop-down__flex .drop-down-menu:first-child {
-    margin-right: 55px;
+    margin-right: 30px;
   }
 }
 
@@ -1690,7 +1690,7 @@ header .header-wrap:last-child {
 }
 
 .banner__text-head {
-  width: 575px;
+  width: 60%;
 }
 .banner__text-head h1 {
   font-family: "PT Serif";

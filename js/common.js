@@ -299,7 +299,7 @@ if(districtAchievements != undefined)
       centeredSlides: false,
       slidesPerView: 'auto',
       spaceBetween: 20,
-      loop: true,
+      loop: false,
       cssMode: true,
       breakpoints: {
       1014: {
@@ -307,7 +307,7 @@ if(districtAchievements != undefined)
         centeredSlides: true,
         slidesPerView: 3,
         spaceBetween: 40,
-        loop: true,
+        loop: false,
       },
         744:
         {
