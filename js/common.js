@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded",(event) => {
   let mainBannerElement = document.querySelector('.main-banner__swiper')
-  const mainBannerSwiper = new Swiper('.main-banner__swiper', {
+  let mainBannerSwiper = new Swiper('.main-banner__swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
     cssMode: true,
+    pagination: {
+      el: ".blogSwiper-pagination",
+    },
     breakpoints: {
       744:
       {
@@ -12,10 +15,34 @@ document.addEventListener("DOMContentLoaded",(event) => {
       }
     }
   })
+  window.addEventListener("resize", () => {
+    setTimeout(() => {
+              mainBannerSwiper.destroy();
+              mainBannerSwiper = new Swiper('.main-banner__swiper', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                cssMode: true,
+                pagination: {
+                  el: ".blogSwiper-pagination",
+                },
+                breakpoints: {
+                  744:
+                  {
+                    cssMode: false,
+                  }
+                }
+              })
+        },10)
+    console.log('sadas')
+  });
   let header = document.querySelector('header')
   let headerInner = document.querySelector('.header')
   let footer = document.querySelector('footer')
   let socialsRight = document.querySelector('.socials-right')
+  let socialTimeout = setTimeout(() => {
+    socialsRight.classList.add('socials-right_hidden')
+  },3000)
   let posY = 0
 let topical = document.querySelector('.topical')
 
@@ -31,6 +58,21 @@ if(topical != undefined)
       }
     }
   })
+  window.addEventListener("resize", () => {
+    setTimeout(() => {
+              topicalSwiper.destroy();
+              topicalSwiper = new Swiper('.topical-swiper', {
+                slidesPerView: 'auto',
+                cssMode: true,
+                breakpoints: {
+                  744:
+                  {
+                    cssMode: false,
+                  }
+                }
+              })
+        },10)
+  });
 }
 
 let newsDetailSwiper = document.querySelectorAll('.news-detail__images-with-swiper')
@@ -54,7 +96,26 @@ newsDetailSwiper.forEach((item, i) => {
   },
   })
 
-
+  window.addEventListener("resize", () => {
+    setTimeout(() => {
+              nDS.destroy();
+              nDS = new Swiper(d, {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                cssMode: true,
+                breakpoints: {
+                  744:
+                  {
+                    cssMode: false,
+                  }
+              },
+              pagination: {
+                el: ".news-detail__swiper-pagination",
+              },
+              })
+        },10)
+  });
 
   let next = item.querySelector('.news-detail__swiper-buttons-next')
   let prev = item.querySelector('.news-detail__swiper-buttons-prev')
@@ -73,10 +134,10 @@ if(mainBannerElement != undefined)
   let next = mainBannerElement.querySelector('.main-banner__btn-left')
   let prev = mainBannerElement.querySelector('.main-banner__btn-right')
   next.addEventListener('click',() => {
-    mainBannerSwiper.slideNext();
+    mainBannerSwiper.slidePrev();
   })
   prev.addEventListener('click',() => {
-    mainBannerSwiper.slidePrev();
+    mainBannerSwiper.slideNext();
   })
 
   console.log(mainBannerElement.clientHeight)
@@ -93,21 +154,67 @@ if(mainBannerElement != undefined)
 }
 
   let districtElement = document.querySelector('.district__banner')
+  let upButton = document.querySelector('.up-button')
+  if(upButton != undefined)
+  {
+  upButton.addEventListener('click',() => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  })
+  }
   document.addEventListener('scroll',() => {
+    if(upButton != undefined)
+    {
+      if(this.scrollY > 900)
+      {
+        upButton.style.display = 'flex'
+      }
+      else
+      {
+        upButton.style.display = 'none'
+      }
+    }
   if(this.scrollY > posY && this.scrollY > 100 )
   {
     // высота 735
     // топ 80 - (735 - 2*80)
 
     //console.log(this.scrollY,posY )
+      socialsRight.classList.add('socials-right_hidden')
+      clearTimeout(socialTimeout);
     posY = this.scrollY - 3
     header.classList.add('header_scrolled')
+    if(upButton != undefined)
+    {
+      upButton.classList.remove('up-button_up')
+    }
   }
   else
   {
+    socialsRight.classList.remove('socials-right_hidden')
+    clearTimeout(socialTimeout);
+    socialTimeout = setTimeout(() => {
+      socialsRight.classList.add('socials-right_hidden')
+    },3000)
     header.classList.remove('header_scrolled')
     posY = this.scrollY;
+    if(upButton != undefined)
+    {
+      upButton.classList.add('up-button_up')
+    }
     //console.log('das')
+  }
+  if(this.scrollY + this.innerHeight > document.body.clientHeight - (footer.clientHeight + 100))
+  {
+    if(upButton != undefined)
+    {
+      upButton.style.display = 'none'
+    }
+  }
+  else
+  {
+    if(upButton != undefined)
+    {
+    }
   }
   if(mainBannerElement != undefined)
   {
@@ -146,7 +253,7 @@ if(mainBannerElement != undefined)
    }
    else
    {
-     socialsRight.classList.remove('socials-right_hidden')
+     //socialsRight.classList.remove('socials-right_hidden')
    }
 
 
@@ -262,7 +369,7 @@ let districtAchievements = document.querySelector('.district__achievements-list'
 
 if(districtAchievements != undefined)
 {
-  const dA = new Swiper('.district__achievements-list', {
+  let dA = new Swiper('.district__achievements-list', {
     slidesPerView: 'auto',
     spaceBetween: 20,
     cssMode: true,
@@ -276,6 +383,25 @@ if(districtAchievements != undefined)
     }
   }
   })
+  window.addEventListener("resize", () => {
+    setTimeout(() => {
+              dA.destroy();
+              dA = new Swiper('.district__achievements-list', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                cssMode: true,
+                breakpoints: {
+                1014: {
+                  spaceBetween: 40,
+                },
+                744:
+                {
+                  cssMode: false,
+                }
+              }
+              })
+        },10)
+  });
 }
 
 
@@ -283,7 +409,7 @@ const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
 
 
 
-  const lastEventsSwiper = new Swiper('.last-events__swiper', {
+  let lastEventsSwiper = new Swiper('.last-events__swiper', {
     slidesPerView: 'auto',
     cssMode: true,
     breakpoints: {
@@ -294,11 +420,26 @@ const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
   }
   })
 
+  window.addEventListener("resize", () => {
+    setTimeout(() => {
+              lastEventsSwiper.destroy();
+              lastEventsSwiper = new Swiper('.last-events__swiper', {
+                slidesPerView: 'auto',
+                cssMode: true,
+                breakpoints: {
+                  744:
+                  {
+                    cssMode: false,
+                  }
+              }
+              })
+        },10)
+  });
 
   let sls = document.querySelector('.strategy-list__swiper')
   if(sls != undefined)
   {
-    const strategyListSwiper = new Swiper('.strategy-list__swiper', {
+    let strategyListSwiper = new Swiper('.strategy-list__swiper', {
       direction: "horizontal",
       centeredSlides: false,
       slidesPerView: 'auto',
@@ -319,6 +460,34 @@ const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
         }
     }
     })
+
+    window.addEventListener("resize", () => {
+      setTimeout(() => {
+                strategyListSwiper.destroy();
+                strategyListSwiper = new Swiper('.strategy-list__swiper', {
+                  direction: "horizontal",
+                  centeredSlides: false,
+                  slidesPerView: 'auto',
+                  spaceBetween: 20,
+                  loop: false,
+                  cssMode: true,
+                  breakpoints: {
+                  1014: {
+                    direction: "vertical",
+                    centeredSlides: true,
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                    loop: false,
+                  },
+                    744:
+                    {
+                      cssMode: false,
+                    }
+                }
+                })
+          },10)
+    });
+
     let next = sls.querySelector('.strategy-list__btn-next')
     let prev = sls.querySelector('.strategy-list__btn-prev')
     next.addEventListener('click',() => {
@@ -332,7 +501,7 @@ const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
 
   let blogSwipers = document.querySelectorAll('.blog__item-images')
   blogSwipers.forEach((item, i) => {
-    const slider = new Swiper(item.querySelector('.blogSwiper'), {
+    let slider = new Swiper(item.querySelector('.blogSwiper'), {
       centeredSlides: false,
       slidesPerView: 'auto',
       spaceBetween: 20,
@@ -348,13 +517,34 @@ const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
         }
     }
     })
+    window.addEventListener("resize", () => {
+      setTimeout(() => {
+                slider.destroy();
+                slider = new Swiper(item.querySelector('.blogSwiper'), {
+                  centeredSlides: false,
+                  slidesPerView: 'auto',
+                  spaceBetween: 20,
+                  loop: true,
+                  cssMode: true,
+                  pagination: {
+                    el: ".blogSwiper-pagination",
+                  },
+                  breakpoints: {
+                    744:
+                    {
+                      cssMode: false,
+                    }
+                }
+                })
+          },10)
+    });
     let next = item.querySelector('.blogSwiper-buttons-next')
     let prev = item.querySelector('.blogSwiper-buttons-prev')
     next.addEventListener('click',() => {
-      slider.slideNext();
+      slider.slidePrev();
     })
     prev.addEventListener('click',() => {
-      slider.slidePrev();
+      slider.slideNext();
     })
   });
 
@@ -385,6 +575,5 @@ menuBtn.addEventListener('click', () => {
   header.classList.toggle('header_mobileMenuOpened')
   mobileMenu.classList.toggle('header__mobile_active')
 })
-
 
 })
