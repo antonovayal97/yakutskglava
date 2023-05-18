@@ -1336,6 +1336,19 @@ header .header-wrap:last-child {
   z-index: 999;
 }
 
+.header-submit-link {
+  display: flex;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #A43131;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
 .top-tabs {
   margin-bottom: 50px;
 }
