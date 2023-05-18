@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no">
     <title>Сайт главы</title>
+    <link rel="stylesheet" href="./libs/hystmodal.min.css">
     <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="./libs/swiper-bundle.min.js"></script>
+    <script src="./libs/hystmodal.min.js"></script>
+    <script src="./libs/vue2full.js"></script>
   </head>
   <body>
     <header>
@@ -126,7 +129,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="header__action"><a class="header__action-btn button" href="#"><span>Подать обращение</span></a></div>
+              <div class="header__action"><a class="header__action-btn button" data-hystmodal="#submitApplication"><span>Подать обращение</span></a></div>
             </div>
             <div class="header__mobile">
               <div class="header__mobile-btn">
@@ -390,6 +393,77 @@
     <div class="cookie">
       <div class="cookie__text"><span>Мы используем cookies, чтобы улучшить ваш опыт на нашем сайте. Продолжая использовать его, вы соглашаетесь на использование файлов cookie в соответствии с нашей политикой конфиденциальности.</span></div><span class="cookie__btn"><span>Принять cookies</span></span>
     </div>
+    <div class="hystmodal" id="submitApplication" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="submit-modal__close" data-hystclose>
+            <div class="submit-modal__close-1"></div>
+            <div class="submit-modal__close-2"></div>
+          </div><!-- Ваш HTML код модального окна -->
+<script src="https://captcha-api.yandex.ru/captcha.js" defer></script>
+          <div class="submit-modal" id="submitForm">
+            <div class="submit-modal__wrap" v-if="!done">
+              <div class="submit-modal__header">
+                <h2>Подать обращение</h2>
+                <p>Оставьте ваши обращение и в ближайшее время мы постараемся дать на него ответ</p>
+              </div>
+              <div class="submit-modal__input">
+                <label><span>Имя</span><span style="color: red">*</span></label>
+                <input type="text" placeholder="Ваше имя" v-model="name.value" @change="checkName()">
+                <div class="submit-error" v-if="name.error != ''"><span>{{name.error}}</span></div>
+              </div>
+              <div class="submit-modal__input">
+                <label><span>Телефон</span><span style="color: red">*</span></label>
+                <input type="text" ref="input" v-mask="'+7 (___) ___ __ __'" @change="unmaskedValue">
+                <div class="submit-error" v-if="phone.error != ''"><span>{{phone.error}}</span></div>
+              </div>
+              <div class="submit-modal__input">
+                <label><span>E-mail</span><span style="color: red">*</span></label>
+                <input type="text" @change="validEmail" placeholder="Ваш e-mail для связи" v-model="email.value">
+                <div class="submit-error" v-if="email.error != ''"><span>{{email.error}}</span></div>
+              </div>
+              <div class="submit-modal__input">
+                <label><span>Тема</span><span style="color: red">*</span></label>
+                <input type="text" placeholder="Тема вашего обращения" v-model="tema.value" @change="checkTema">
+                <div class="submit-error" v-if="tema.error != ''"><span>{{tema.error}}</span></div>
+              </div>
+              <div class="submit-modal__input">
+                <label><span>Текст сообщения</span><span style="color: red">*</span></label>
+                <textarea placeholder="По какому вопросу вы хотите обратиться?" v-model="text.value" @change="checkText"></textarea>
+                <div class="submit-error" v-if="text.error != ''"><span>{{text.error}}</span></div>
+              </div>
+              <div class="submit-modal__file">
+                <label><span>Файлы</span></label>
+                <label class="label-file" for="file"><input type="file" id="file" ref="myFiles" class="custom-file-input" @change="previewFiles" accept="image/*,.pdf,.doc,.xls,.docx,.xlsx" v-show="files.length != 0">
+                  <div class="file-skrep" v-show="files.length == 0"><span>Прикрепить файл</span>
+                    <svg class="icon icon-skrep ">
+                      <use href="./img/svg/sprite.svg#skrep"></use>
+                    </svg>
+                  </div>
+                </label>
+              </div>
+              <div class="submit-modal__sogl">
+                <label class="submit-modal__check">
+                  <input type="checkbox" name="variant" v-model="checked.value" @change="checkChecked"><span></span>
+                </label><span>Я соглашаюсь на<a href="#"> обработку моих персональных данных</a></span>
+              </div>
+              <div class="submit-error" v-if="checked.error != ''"><span>{{checked.error}}</span></div>
+              <div class="submit-modal__capcha"><div style="height: 100px" id="captcha-container" class="smart-captcha" data-sitekey="ysc1_ih8wxlGdvizILkuJted8eLIv0rTMf3cCHPAgXx2g8c354bb7"></div>
+              <div class="submit-modal__submit">
+                <div class="button" @click="checkAll()"><span>Отправить</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-modal__wrap" v-if="done">
+            <div class="submit-modal__done">
+              <h2>Ваше обращение подано</h2>
+              <p>В скором времени мы с вами свяжемся</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/common.js"></script>
+    <script src="./libs/submitForm.js"></script>
   </body>
 </html>
