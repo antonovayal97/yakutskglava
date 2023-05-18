@@ -279,6 +279,10 @@ if(districtAchievements != undefined)
 }
 
 
+const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
+
+
+
   const lastEventsSwiper = new Swiper('.last-events__swiper', {
     slidesPerView: 'auto',
     cssMode: true,
