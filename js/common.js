@@ -361,10 +361,13 @@ const submitApplication = new HystModal({linkAttributeName: "data-hystmodal",});
   let dropDown = document.querySelectorAll('.drop-down-menu')
   dropDown.forEach((item, i) => {
     let outside = item.querySelector('.drop-down-menu__outside')
-    outside.addEventListener('click',() => {
+    if(outside != undefined)
+    {
+      outside.addEventListener('click',() => {
 
-      item.classList.toggle('drop-down-menu_active')
-    })
+        item.classList.toggle('drop-down-menu_active')
+      })
+    }
   });
 
 
