@@ -983,6 +983,359 @@ header .header-wrap:last-child {
   font-weight: 700;
 }
 
+.hystmodal__window {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .hystmodal__window {
+    width: 100%;
+  }
+}
+
+.submit-modal {
+  padding: 70px;
+  padding-top: 106px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.submit-modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #A43131;
+  cursor: pointer;
+}
+
+.submit-modal__close-1 {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #000;
+  top: 20px;
+  left: 9px;
+  rotate: 45deg;
+}
+
+.submit-modal__close-2 {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #000;
+  top: 20px;
+  left: 9px;
+  rotate: -45deg;
+}
+
+.submit-modal__wrap {
+  width: 420px;
+}
+@media (max-width: 768px) {
+  .submit-modal__wrap {
+    width: 100%;
+  }
+}
+
+.submit-modal__header {
+  margin-bottom: 30px;
+}
+.submit-modal__header h2 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .submit-modal__header h2 {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+  }
+}
+.submit-modal__header p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .submit-modal__header p {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 768px) {
+  .submit-modal__header {
+    margin-bottom: 38px;
+  }
+}
+
+.submit-modal__input {
+  margin-bottom: 20px;
+}
+.submit-modal__input label {
+  display: block;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .submit-modal__input label {
+    margin-bottom: 4px;
+  }
+}
+.submit-modal__input span {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "PT Serif";
+}
+.submit-modal__input input {
+  border: 1px solid #C6C6C6;
+  border-radius: 5px;
+  padding: 12px 16px;
+  width: 100%;
+  outline: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media (max-width: 768px) {
+  .submit-modal__input input {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.submit-modal__input textarea {
+  border: 1px solid #C6C6C6;
+  border-radius: 5px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  outline: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media (max-width: 768px) {
+  .submit-modal__input textarea {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.submit-modal__file label {
+  display: block;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .submit-modal__file label {
+    margin-bottom: 4px;
+  }
+}
+.submit-modal__file span {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "PT Serif";
+}
+.submit-modal__file input:checked {
+  background-color: red;
+}
+.submit-modal__file input::-webkit-file-upload-button {
+  display: none;
+}
+
+.submit-modal__sogl {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.submit-modal__sogl a {
+  color: #A43131;
+}
+.submit-modal__sogl .submit-modal__check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  height: 40px;
+}
+.submit-modal__sogl .submit-modal__check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.submit-modal__sogl .submit-modal__check > span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 20px;
+  width: 20px;
+  border: 3px solid #A43131;
+}
+.submit-modal__sogl .submit-modal__check .radio {
+  border-radius: 50%;
+}
+.submit-modal__sogl .submit-modal__check > span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.submit-modal__sogl .submit-modal__check input:checked ~ span:after {
+  display: block;
+}
+.submit-modal__sogl .submit-modal__check > span:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+
+.label-file {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  text-decoration-line: underline;
+}
+
+.file-skrep {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.submit-modal__capcha {
+  margin-top: 20px;
+}
+
+.submit-modal__submit {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submit-modal__done {
+  text-align: center;
+}
+.submit-modal__done h2 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .submit-modal__done h2 {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+  }
+}
+.submit-modal__done p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .submit-modal__done p {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.custom-file-input {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media (max-width: 768px) {
+  .custom-file-input {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.submit-error span {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: red;
+}
+
+.hystmodal--active {
+  z-index: 1000;
+}
+
+.hystmodal__shadow--show {
+  z-index: 999;
+}
+
 .top-tabs {
   margin-bottom: 50px;
 }
@@ -4082,6 +4435,7 @@ body {
 }
 @media (max-width: 768px) {
   .socials-right {
+    display: none;
     width: 50px;
     padding: 20px 0;
   }
