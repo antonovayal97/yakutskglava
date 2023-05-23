@@ -60,55 +60,19 @@ textarea {
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-BoldItalic.ttf");
-  font-style: italic;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-Italic.ttf");
-  font-style: italic;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif-Regular.ttf");
+  font-family: "Golos";
+  src: url("../fonts/Golos-Text_Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/PTSans-Bold.ttf");
+  font-family: "Golos";
+  src: url("../fonts/Golos-Text_DemiBold.ttf");
   font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/PTSans-BoldItalic.ttf");
-  font-style: italic;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/PTSans-Italic.ttf");
-  font-style: italic;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/PTSans-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 footer {
-  background-color: #A43131;
+  background-color: #26509C;
   padding: 40px 0;
   -webkit-user-select: none;
           user-select: none;
@@ -126,7 +90,7 @@ footer {
 
 .footer__menu {
   color: #fff;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -164,10 +128,11 @@ footer {
 }
 
 .footer__contacts {
-  width: 310px;
+  width: 370px;
   color: #fff;
   -webkit-user-select: text;
           user-select: text;
+  text-align: right;
 }
 @media (max-width: 1014px) {
   .footer__contacts {
@@ -183,8 +148,8 @@ footer {
 }
 
 .footer__contacts-text {
-  font-family: "PT Sans";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -192,8 +157,8 @@ footer {
 }
 
 .footer__contacts-tel {
-  font-family: "PT Sans";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -256,11 +221,11 @@ footer {
 
 .platform__text {
   margin-right: 8px;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
 }
 
 header {
@@ -359,7 +324,9 @@ header .header-wrap:last-child {
   transform: translate(0, -100px);
 }
 .header_scrolled .header-wrap:last-child {
-  background-color: #A43131;
+  background: rgba(38, 80, 156, 0.8);
+  -webkit-backdrop-filter: blur(47px);
+          backdrop-filter: blur(47px);
   border: none;
   border-radius: 0;
 }
@@ -419,7 +386,7 @@ header .header-wrap:last-child {
   transform: translate(0, -100px);
 }
 .header_mobileMenuOpened .header-wrap:last-child {
-  background-color: #A43131;
+  background-color: #26509C;
   border: none;
   border-radius: 0;
 }
@@ -501,7 +468,7 @@ header .header-wrap:last-child {
 
 .header-top {
   height: 50px;
-  background-color: #A43131;
+  background-color: #26509C;
   border: none;
 }
 @media (max-width: 1200px) {
@@ -526,7 +493,7 @@ header .header-wrap:last-child {
 }
 
 .header-a11y__name {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -545,7 +512,7 @@ header .header-wrap:last-child {
 
 .header-langs {
   display: flex;
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -633,7 +600,7 @@ header .header-wrap:last-child {
 }
 .header__menu ul li {
   position: relative;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -811,7 +778,7 @@ header .header-wrap:last-child {
   margin-right: -30px;
 }
 .header__search-pole-mobile input {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -829,7 +796,7 @@ header .header-wrap:last-child {
 .header__search-pole input {
   height: 100%;
   width: calc(100% - 45px);
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -848,7 +815,7 @@ header .header-wrap:last-child {
 .header__search-pole-mobile input {
   height: 100%;
   width: calc(100% - 45px);
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -868,13 +835,14 @@ header .header-wrap:last-child {
 }
 
 .header__action-btn {
-  font-family: "PT Sans";
+  white-space: nowrap;
+  font-family: "Golos";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
   padding: 12.5px 20px;
-  background-color: #A43131;
+  background-color: #26509C;
   color: #fff;
   border-radius: 8px;
 }
@@ -889,7 +857,7 @@ header .header-wrap:last-child {
   align-items: flex-start;
 }
 .header__links-mobile ul li {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -951,7 +919,7 @@ header .header-wrap:last-child {
 }
 
 .header-a11y-mobile__name {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -966,11 +934,11 @@ header .header-wrap:last-child {
 }
 
 .header-langs__item-mobile {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 150%;
   line-height: 16px;
 }
 .header-langs__item-mobile:first-child {
@@ -999,6 +967,11 @@ header .header-wrap:last-child {
   padding-bottom: 50px;
   background-color: #fff;
 }
+@media (max-width: 768px) {
+  .submit-modal {
+    padding: 20px;
+  }
+}
 
 .submit-modal__close {
   position: absolute;
@@ -1007,8 +980,14 @@ header .header-wrap:last-child {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 3px solid #A43131;
+  border: 3px solid #26509C;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .submit-modal__close {
+    top: 20px;
+    left: 20px;
+  }
 }
 
 .submit-modal__close-1 {
@@ -1044,25 +1023,26 @@ header .header-wrap:last-child {
   margin-bottom: 30px;
 }
 .submit-modal__header h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 120%;
+  letter-spacing: -0.02em;
   margin-bottom: 10px;
   white-space: nowrap;
 }
 @media (max-width: 768px) {
   .submit-modal__header h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 120%;
   }
 }
 .submit-modal__header p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1070,10 +1050,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .submit-modal__header p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -1096,12 +1076,12 @@ header .header-wrap:last-child {
   }
 }
 .submit-modal__input span {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
-  font-family: "PT Serif";
+  line-height: 150%;
+  font-family: "Golos";
 }
 .submit-modal__input input {
   border: 1px solid #C6C6C6;
@@ -1109,18 +1089,18 @@ header .header-wrap:last-child {
   padding: 12px 16px;
   width: 100%;
   outline: none;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   .submit-modal__input input {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -1132,18 +1112,18 @@ header .header-wrap:last-child {
   height: 200px;
   resize: none;
   outline: none;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   .submit-modal__input textarea {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -1158,12 +1138,12 @@ header .header-wrap:last-child {
   }
 }
 .submit-modal__file span {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
-  font-family: "PT Serif";
+  line-height: 150%;
+  font-family: "Golos";
 }
 .submit-modal__file input:checked {
   background-color: red;
@@ -1176,11 +1156,11 @@ header .header-wrap:last-child {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
   /* On mouse-over, add a grey background color */
@@ -1190,7 +1170,7 @@ header .header-wrap:last-child {
   /* Style the checkmark/indicator */
 }
 .submit-modal__sogl a {
-  color: #A43131;
+  color: #26509C;
 }
 .submit-modal__sogl .submit-modal__check {
   display: block;
@@ -1215,7 +1195,7 @@ header .header-wrap:last-child {
   transform: translate(0, -50%);
   height: 20px;
   width: 20px;
-  border: 3px solid #A43131;
+  border: 3px solid #26509C;
 }
 .submit-modal__sogl .submit-modal__check .radio {
   border-radius: 50%;
@@ -1240,7 +1220,7 @@ header .header-wrap:last-child {
 }
 
 .label-file {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1269,24 +1249,25 @@ header .header-wrap:last-child {
   text-align: center;
 }
 .submit-modal__done h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 120%;
+  letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   .submit-modal__done h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 120%;
   }
 }
 .submit-modal__done p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1294,33 +1275,33 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .submit-modal__done p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
 
 .custom-file-input {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   .custom-file-input {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
 
 .submit-error span {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1338,13 +1319,13 @@ header .header-wrap:last-child {
 
 .header-submit-link {
   display: flex;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   text-decoration-line: underline;
-  color: #A43131;
+  color: #26509C;
   margin-bottom: 60px;
   margin-top: 60px;
 }
@@ -1372,7 +1353,7 @@ header .header-wrap:last-child {
 
 .top-tab__item {
   margin-right: 50px;
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -1393,16 +1374,17 @@ header .header-wrap:last-child {
   position: relative;
   margin-left: 22px;
   color: #000;
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 120%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 768px) {
   .top-tab__item_active {
     margin-left: 11px;
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1437,12 +1419,12 @@ header .header-wrap:last-child {
           user-select: none;
   padding: 14.5px 20px;
   color: #fff;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  background-color: #A43131;
+  background-color: #26509C;
   border-radius: 5px;
   transition: all 0.2s ease;
 }
@@ -1453,7 +1435,7 @@ header .header-wrap:last-child {
   background-color: #71797E;
 }
 .button_grey:hover {
-  background-color: #A43131;
+  background-color: #26509C;
 }
 
 .drop-down-menu {
@@ -1471,9 +1453,9 @@ header .header-wrap:last-child {
 
 .drop-down-menu__header {
   margin-bottom: 10px;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
@@ -1489,10 +1471,10 @@ header .header-wrap:last-child {
 }
 
 .drop-down-menu__name {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
 }
 
@@ -1506,7 +1488,7 @@ header .header-wrap:last-child {
   position: absolute;
   top: 90px;
   padding: 35px 30px;
-  background-color: #A43131;
+  background-color: #26509C;
   color: #fff;
   z-index: 3;
 }
@@ -1520,12 +1502,12 @@ header .header-wrap:last-child {
   transform: translate(-50%, 0);
   width: 30px;
   height: 10px;
-  background-color: #A43131;
+  background-color: #26509C;
 }
 
 .drop-down-menu__item {
   margin-bottom: 30px;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1567,7 +1549,7 @@ header .header-wrap:last-child {
 }
 
 .left-menu__header {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1577,7 +1559,7 @@ header .header-wrap:last-child {
 
 .left-menu__item {
   margin-bottom: 30px;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1685,7 +1667,7 @@ header .header-wrap:last-child {
 }
 
 .date-picker__placeholder {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1731,11 +1713,12 @@ header .header-wrap:last-child {
   margin-bottom: 50px;
 }
 .topical__header h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 64px;
-  line-height: 120%;
+  line-height: 110%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 1014px) {
   .topical__header {
@@ -1866,52 +1849,52 @@ header .header-wrap:last-child {
   padding-right: 15px;
   margin-right: 15px;
   border-right: 1px solid #fff;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
 }
 @media (max-width: 1014px) {
   .topical__card-category {
-    font-family: "PT Serif";
-    font-style: italic;
+    font-family: "Golos";
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
 .topical__card-date {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
 }
 @media (max-width: 1014px) {
   .topical__card-date {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
 
 .topical__card-name h3 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 120%;
 }
 @media (max-width: 1014px) {
   .topical__card-name h3 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
   }
 }
@@ -2038,11 +2021,11 @@ header .header-wrap:last-child {
 }
 
 .banner__text-top {
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 24px;
   margin-bottom: 15px;
 }
 @media (max-width: 1014px) {
@@ -2052,11 +2035,11 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .banner__text-top {
-    font-family: "PT Serif";
-    font-style: italic;
+    font-family: "Golos";
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
@@ -2064,22 +2047,24 @@ header .header-wrap:last-child {
   width: 60%;
 }
 .banner__text-head h1 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 64px;
-  line-height: 120%;
+  line-height: 110%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 1014px) {
   .banner__text-head {
     width: 500px;
   }
   .banner__text-head h1 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 48px;
     line-height: 120%;
+    letter-spacing: -0.02em;
   }
 }
 @media (max-width: 768px) {
@@ -2087,9 +2072,9 @@ header .header-wrap:last-child {
     width: 287px;
   }
   .banner__text-head h1 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 120%;
   }
@@ -2097,7 +2082,7 @@ header .header-wrap:last-child {
 
 .banner__text-bot {
   width: 540px;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2108,7 +2093,7 @@ header .header-wrap:last-child {
   .banner__text-bot {
     width: 500px;
     margin-top: 15px;
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -2119,10 +2104,10 @@ header .header-wrap:last-child {
   .banner__text-bot {
     width: 310px;
     margin-top: 10px;
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -2159,11 +2144,12 @@ header .header-wrap:last-child {
   margin-bottom: 50px;
 }
 .last-events__header h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 64px;
-  line-height: 120%;
+  line-height: 110%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 1014px) {
   .last-events__header {
@@ -2171,11 +2157,12 @@ header .header-wrap:last-child {
     margin-bottom: 40px;
   }
   .last-events__header h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 48px;
     line-height: 120%;
+    letter-spacing: -0.02em;
   }
 }
 @media (max-width: 768px) {
@@ -2183,9 +2170,9 @@ header .header-wrap:last-child {
     margin-bottom: 30px;
   }
   .last-events__header h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 120%;
   }
@@ -2292,8 +2279,8 @@ header .header-wrap:last-child {
 }
 
 .event-card__category {
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -2301,28 +2288,28 @@ header .header-wrap:last-child {
 }
 @media (max-width: 1014px) {
   .event-card__category {
-    font-family: "PT Serif";
-    font-style: italic;
+    font-family: "Golos";
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
     margin-bottom: 10px;
   }
 }
 
 .event-card__name {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 120%;
 }
 @media (max-width: 1014px) {
   .event-card__name {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
   }
 }
@@ -2379,22 +2366,24 @@ header .header-wrap:last-child {
   width: 320px;
 }
 .strategy-name h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 64px;
-  line-height: 120%;
+  line-height: 110%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 1200px) {
   .strategy-name {
     left: 50px;
   }
   .strategy-name h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 48px;
     line-height: 120%;
+    letter-spacing: -0.02em;
   }
 }
 @media (max-width: 1014px) {
@@ -2413,9 +2402,9 @@ header .header-wrap:last-child {
     margin-bottom: 30px;
   }
   .strategy-name h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 120%;
   }
@@ -2607,8 +2596,8 @@ header .header-wrap:last-child {
 }
 
 .strategy-card__category {
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -2616,33 +2605,33 @@ header .header-wrap:last-child {
 }
 @media (max-width: 1014px) {
   .strategy-card__category {
-    font-family: "PT Serif";
-    font-style: italic;
+    font-family: "Golos";
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
 .strategy-card__name {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 120%;
 }
 @media (max-width: 1014px) {
   .strategy-card__name {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
   }
 }
 
 .strategy-card__desc {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2651,12 +2640,163 @@ header .header-wrap:last-child {
 }
 @media (max-width: 1014px) {
   .strategy-card__desc {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
+}
+
+.main-numbers {
+  margin-bottom: 100px;
+}
+
+.main-numbers__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-numbers__header h2 {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1014px) {
+  .main-numbers__header {
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  .main-numbers__header h2 {
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+  }
+}
+@media (max-width: 768px) {
+  .main-numbers__header h2 {
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-numbers__card {
+    margin: 0 -40px;
+  }
+}
+@media (max-width: 768px) {
+  .main-numbers__card {
+    margin: 0 -20px;
+  }
+}
+
+.main-numbers__swiper {
+  background-color: #F1F1F1;
+}
+@media (max-width: 1300px) {
+  .main-numbers__swiper {
+    background-color: unset;
+    padding: 0;
+  }
+}
+.main-numbers__swiper .swiper-wrapper {
+  justify-content: space-between;
+}
+.main-numbers__swiper .swiper-slide {
+  padding: 67px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 105px;
+  background-color: #F1F1F1;
+}
+@media (max-width: 1014px) {
+  .main-numbers__swiper .swiper-slide {
+    padding: 50px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.main-numbers__swiper .swiper-slide:first-child {
+  padding-left: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .main-numbers__swiper .swiper-slide:first-child {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .main-numbers__swiper .swiper-slide:first-child {
+    margin-left: 20px;
+  }
+}
+.main-numbers__swiper .swiper-slide:last-child {
+  padding-right: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .main-numbers__swiper .swiper-slide:last-child {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .main-numbers__swiper .swiper-slide:last-child {
+    margin-right: 20px;
+  }
+}
+
+.main-numbers__item {
+  width: 236px;
+}
+
+.number__name {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C52CD;
+}
+
+.number__count {
+  display: flex;
+  align-items: flex-end;
+}
+
+.number__number {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.number__value {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.number__desc {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 .strategy-list__item {
@@ -2693,24 +2833,24 @@ header .header-wrap:last-child {
   margin-bottom: 10px;
 }
 .strategy-list__item-name h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
 @media (max-width: 768px) {
   .strategy-list__item-name h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
   }
 }
 
 .strategy-list__item-desc {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2718,10 +2858,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .strategy-list__item-desc {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -2815,11 +2955,11 @@ header .header-wrap:last-child {
   padding-right: 20px;
   margin-right: 20px;
   border-right: 1px solid #fff;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
 }
 @media (max-width: 768px) {
   .news-outside__category {
@@ -2831,7 +2971,7 @@ header .header-wrap:last-child {
 }
 
 .news-outside__date {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2845,9 +2985,9 @@ header .header-wrap:last-child {
 }
 
 .news-outside__name h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
@@ -2906,11 +3046,11 @@ header .header-wrap:last-child {
 }
 
 .news-detail__category {
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 24px;
   line-height: 20px;
   margin-right: 20px;
   padding-right: 20px;
@@ -2932,7 +3072,7 @@ header .header-wrap:last-child {
 }
 
 .news-detail__date {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2955,9 +3095,9 @@ header .header-wrap:last-child {
   margin-bottom: 30px;
 }
 .news-detail__name h1 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
@@ -2966,16 +3106,16 @@ header .header-wrap:last-child {
     margin-bottom: 20px;
   }
   .news-detail__name h1 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     line-height: 130%;
   }
 }
 
 .news-detail__content p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2990,10 +3130,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .news-detail__content p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3032,11 +3172,11 @@ header .header-wrap:last-child {
 .image-with-text__text {
   margin-top: 20px;
   color: #C6C6C6;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
 }
 @media (max-width: 1014px) {
   .image-with-text__text {
@@ -3046,11 +3186,11 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .image-with-text__text {
-    font-family: "PT Serif";
-    font-style: italic;
+    font-family: "Golos";
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
@@ -3090,7 +3230,7 @@ header .header-wrap:last-child {
 }
 
 .news-detail__source-header {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3098,16 +3238,16 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .news-detail__source-header {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
 
 .news-detail__source-value {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3115,24 +3255,24 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .news-detail__source-value {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
 
 .news-detail__share {
   padding: 10px 15px;
-  background-color: #A43131;
+  background-color: #26509C;
   border-radius: 5px;
   color: #fff;
   display: flex;
   align-items: center;
   gap: 5px;
   transition: all 0.3s ease;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -3250,17 +3390,17 @@ header .header-wrap:last-child {
   margin-bottom: 30px;
 }
 .news-detail__comments-header h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
 @media (max-width: 768px) {
   .news-detail__comments-header h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 120%;
   }
@@ -3297,7 +3437,7 @@ header .header-wrap:last-child {
 }
 
 .news-detail__comment-name {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -3308,10 +3448,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .news-detail__comment-name {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
     margin-right: 10px;
     padding-right: 10px;
@@ -3319,7 +3459,7 @@ header .header-wrap:last-child {
 }
 
 .news-detail__comment-date {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3328,10 +3468,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .news-detail__comment-date {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3341,7 +3481,7 @@ header .header-wrap:last-child {
   margin-bottom: 40px;
 }
 .news-detail__comment-content p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3353,10 +3493,10 @@ header .header-wrap:last-child {
     margin-bottom: 20px;
   }
   .news-detail__comment-content p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3368,11 +3508,11 @@ header .header-wrap:last-child {
   margin-right: 20px;
   padding-right: 20px;
   border-right: 1px solid #C6C6C6;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
   color: #C6C6C6;
 }
 .news-detail__comment-bottom ul li:last-child {
@@ -3384,10 +3524,10 @@ header .header-wrap:last-child {
   .news-detail__comment-bottom ul li {
     margin-right: 10px;
     padding-right: 10px;
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3545,7 +3685,7 @@ header .header-wrap:last-child {
 }
 
 .blog__item-date {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -3554,10 +3694,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .blog__item-date {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3566,17 +3706,17 @@ header .header-wrap:last-child {
   margin-bottom: 10px;
 }
 .blog__item-name h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
 @media (max-width: 768px) {
   .blog__item-name h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 120%;
   }
@@ -3590,7 +3730,7 @@ header .header-wrap:last-child {
   overflow: hidden;
 }
 .blog__item-text p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3598,10 +3738,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .blog__item-text p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3624,7 +3764,7 @@ header .header-wrap:last-child {
   margin-bottom: 50px;
 }
 .search__header h1 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -3695,33 +3835,33 @@ header .header-wrap:last-child {
   margin-bottom: 10px;
 }
 .search__item-name h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 120%;
 }
 @media (max-width: 1014px) {
   .search__item-name h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
   }
 }
 @media (max-width: 768px) {
   .search__item-name h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     line-height: 120%;
   }
 }
 
 .search__item-desc p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -3729,16 +3869,16 @@ header .header-wrap:last-child {
 }
 @media (max-width: 1014px) {
   .search__item-desc p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
 @media (max-width: 768px) {
   .search__item-desc p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -3785,15 +3925,15 @@ header .header-wrap:last-child {
   margin-right: 20px;
   padding-right: 20px;
   border-right: 1px solid #000;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 24px;
 }
 
 .survey__date {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3804,15 +3944,15 @@ header .header-wrap:last-child {
   margin-bottom: 30px;
 }
 .survey__header-name h1 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 150%;
 }
 
 .survey__header-info {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -3830,9 +3970,9 @@ header .header-wrap:last-child {
   margin-bottom: 30px;
 }
 .survey__item-name h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 120%;
 }
@@ -3846,15 +3986,38 @@ header .header-wrap:last-child {
 
 .survey__count {
   margin-top: 40px;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .survey__btn {
   margin-top: 40px;
+}
+
+.survey__result-variant-name {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .survey__result-variant-name {
+    font-size: 16px;
+  }
+}
+.survey__result-variant-name span:first-child {
+  margin-right: 10px;
+}
+
+.survey__result-variant-value {
+  height: 6px;
+  border-radius: 5px;
+  background-color: #71797E;
 }
 
 .district__banner {
@@ -3950,11 +4113,12 @@ header .header-wrap:last-child {
   margin-bottom: 10px;
 }
 .district__name h1 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 120%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 1014px) {
   .district__name h1 {
@@ -3967,7 +4131,7 @@ header .header-wrap:last-child {
     margin-bottom: 5px;
   }
   .district__name h1 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -3979,7 +4143,7 @@ header .header-wrap:last-child {
   color: #C6C6C6;
 }
 .district__name-sakha h2 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -3993,10 +4157,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .district__name-sakha h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -4023,11 +4187,12 @@ header .header-wrap:last-child {
   margin-bottom: 40px;
 }
 .district__achievements-header h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 120%;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 1014px) {
   .district__achievements-header {
@@ -4043,9 +4208,9 @@ header .header-wrap:last-child {
     margin-bottom: 30px;
   }
   .district__achievements-header h2 {
-    font-family: "PT Serif";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
     line-height: 120%;
   }
@@ -4088,24 +4253,24 @@ header .header-wrap:last-child {
   margin-bottom: 10px;
 }
 .district__achievement-name h3 {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 120%;
 }
 @media (max-width: 1014px) {
   .district__achievement-name h3 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
   }
 }
 
 .district__achievement-desc p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -4113,10 +4278,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 1014px) {
   .district__achievement-desc p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -4191,7 +4356,7 @@ header .header-wrap:last-child {
 }
 
 .bio__name h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -4204,25 +4369,26 @@ header .header-wrap:last-child {
 }
 
 .bio__content-section h2 {
-  font-family: "PT Serif";
+  font-family: "Golos";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 120%;
+  letter-spacing: -0.02em;
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .bio__content-section h2 {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 120%;
     margin-bottom: 15px;
   }
 }
 .bio__content-section p {
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -4231,10 +4397,10 @@ header .header-wrap:last-child {
 }
 @media (max-width: 768px) {
   .bio__content-section p {
-    font-family: "PT Sans";
+    font-family: "Golos";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
     margin-bottom: 15px;
   }
@@ -4270,20 +4436,142 @@ header .header-wrap:last-child {
 
 .bio__content-text {
   color: #C6C6C6;
-  font-family: "PT Serif";
-  font-style: italic;
+  font-family: "Golos";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
 }
 @media (max-width: 768px) {
   .bio__content-text {
-    font-family: "PT Serif";
-    font-style: italic;
+    font-family: "Golos";
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
   }
+}
+
+.podcast {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.podcast__btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: #26509C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.podcast__btn .icon {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 768px) {
+  .podcast__btn {
+    width: 80px;
+    height: 80px;
+  }
+  .podcast__btn .icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.podcast__info {
+  flex: 1;
+}
+
+.podcast__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13.5px;
+}
+
+.podcast__activity {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #000;
+}
+@media (max-width: 768px) {
+  .podcast__activity {
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    flex: 1;
+  }
+}
+
+.podcast__date {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .podcast__date {
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.podcast__name {
+  margin-bottom: 5px;
+}
+.podcast__name h2 {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .podcast__name h2 {
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+.podcast__desc {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .podcast__desc {
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.podcast__player {
+  height: 25px;
+  background-color: red;
 }
 
 * {
@@ -4318,7 +4606,7 @@ body {
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -4342,7 +4630,7 @@ body {
   transform: translate(0, -50%);
   height: 20px;
   width: 20px;
-  border: 3px solid #A43131;
+  border: 3px solid #26509C;
   border-radius: 4px;
 }
 
@@ -4353,7 +4641,7 @@ body {
 
 /* When the checkbox is checked, add a blue background */
 .custom__radiocheck input:checked ~ span {
-  background-color: #A43131;
+  background-color: #26509C;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -4419,7 +4707,7 @@ body {
   justify-content: center;
   width: 70px;
   padding: 26px 0;
-  background-color: #A43131;
+  background-color: #26509C;
   position: fixed;
   right: 0;
   top: 50%;
@@ -4508,11 +4796,11 @@ body {
 }
 .cookie__text {
   margin-right: 60px;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   .cookie__text {
@@ -4525,9 +4813,9 @@ body {
 .cookie__btn {
   cursor: pointer;
   padding: 11px 20px;
-  background-color: rgba(144, 0, 0, 0.8);
+  background-color: #26509C;
   color: #fff;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -4549,7 +4837,7 @@ body {
   top: 160px;
   display: none;
   align-items: center;
-  font-family: "PT Sans";
+  font-family: "Golos";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
