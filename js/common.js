@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded",(event) => {
+
   let mainBannerElement = document.querySelector('.main-banner__swiper')
   let mainBannerSwiper = new Swiper('.main-banner__swiper', {
     slidesPerView: 1,
@@ -15,6 +16,39 @@ document.addEventListener("DOMContentLoaded",(event) => {
       }
     }
   })
+
+
+  let mainNumbers = new Swiper('.main-numbers__swiper', {
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    loop: false,
+    cssMode: false,
+    // breakpoints: {
+    //
+    //   744:
+    //   {
+    //     cssMode: false,
+    //   }
+    // }
+  })
+
+  window.addEventListener("resize", () => {
+    setTimeout(() => {
+              mainNumbers.destroy();
+              mainNumbers = new Swiper('.main-numbers__swiper', {
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                loop: false,
+                cssMode: false,
+                // breakpoints: {
+                //   744:
+                //   {
+                //     cssMode: false,
+                //   }
+                // }
+              })
+        },10)
+  });
   window.addEventListener("resize", () => {
     setTimeout(() => {
               mainBannerSwiper.destroy();
