@@ -96,12 +96,12 @@ Vue.directive('mask', {
       return {
         done: false,
         name: {
-          value: "Ayal",
+          value: "",
           error: ""
         },
         email:
         {
-          value: "фыв",
+          value: "",
           error: "",
           valid: false
         },
@@ -110,15 +110,15 @@ Vue.directive('mask', {
           error: ""
         },
         tema: {
-          value: "флывр",
+          value: "",
           error: ""
         },
         text: {
-          value: "дфлыовлдолфы",
+          value: "",
           error: ""
         },
         checked: {
-          value: true,
+          value: false,
           error: ""
         },
         files: []
